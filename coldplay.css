@@ -1,0 +1,537 @@
+/* For changing The body Or The background of the website to rgb(13,16,42) */
+body {
+    background-color: rgb(13, 16, 42);
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /* navbar styling */
+
+  nav{
+    height: 105px;
+    /* border: 2px solid whitesmoke; */
+    transition: .5s linear;
+  }
+  
+  /* to make the favourite word to center left and to change its font style */
+  .favourite-word {
+    font-size: 41px;
+    margin: 0px 169px;
+    font-weight: 300;
+  }
+  
+  .drop {
+    display: none;
+  }
+  
+  @media screen and (max-width: 820px) {
+    .drop {
+      display: block;
+      font-size: 20px;
+      margin: 0px 0px;
+      padding: 2px 2px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .favourite-word {
+      font-size: 20px;
+      margin: 0px 0px;
+      padding: 2px 2px;
+      font-weight: bold;
+    }
+  }
+  
+  /* For Search bar Of the screen */
+  .search-bar-1 {
+    width: 400px;
+    border-radius: 30px;
+    margin: -7px 0px;
+  }
+  
+  .search-icon {
+    margin: -6px 0px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .search-bar-1 {
+      height: 25px;
+      width: 300px;
+    }
+  }
+  
+  /* For profile icon and images */
+  .profile-icon img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0px -8px;
+  }
+  
+  .profile-icon img:hover {
+    height: 55px;
+    width: 55px;
+  }
+  
+  @media screen and (max-width: 820px) {
+    .notification-bell {
+      display: none;
+    }
+  
+    .profile-icon {
+      display: none;
+    }
+  }
+  
+  #p-change {
+    display: inline-block;
+    color: whitesmoke;
+    font-weight: 700;
+    background-color: black;
+  }
+
+
+
+
+
+
+
+
+  /* left section */
+
+  header .left-section{
+    width: 69%;
+    /* height: 200px; */
+    /* border: 2px solid white; */
+    float: left;
+  }
+
+  header .left-section .cold-play-card .container .card{
+    background-color: #141B41;
+  }
+
+
+  header .left-section .cold-play-card .container .card .card-body{
+    color: white;
+  }
+
+  header .left-section .cold-play-card .container .card .card-body .card-title{
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  header .left-section .cold-play-card .container .card-text button{
+      height: 35px;
+      width: 130px;
+      border-radius: 20px;
+      background-color: whitesmoke;
+      color: black;
+      font-weight: 500;
+  }
+
+  header .left-section .cold-play-card .container .card-text button:hover{
+    background-color: black;
+    color: white;
+  }
+
+  header .left-section .cold-play-card .container .col-md-4 img:hover{
+    transition: .5s ease-in-out;
+    opacity: 0.7;
+  }
+
+
+
+
+
+
+  /* songs */
+   
+.queue-section {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.queue-elements-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.queue-element {
+  margin-bottom: 0.6rem;
+  width: 100%;
+  background-color: #1e222e98;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.song-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.queue-number {
+  font-size: 0.8rem;
+  color: #8092a1;
+  margin-right: 1rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.queue-song-img {
+  width: 3rem;
+  border-radius: 0.4rem;
+  margin-right: 1rem;
+}
+
+.queue-song-img~i {
+  transition: all 0.2s ease-in-out;
+}
+
+.queue-song-img~i:hover {
+  opacity: 0.9;
+  height: 1rem;
+}
+
+.queue-song-img:hover~i {
+  opacity: 0.9;
+  height: 1rem;
+}
+
+.play-btn {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  color: white;
+  top: 1rem;
+  left: 1rem;
+}
+
+.queue-song-name {
+  font-size: 0.9rem;
+  color: #f6f7f9;
+}
+
+.queue-artist-name {
+  font-size: 0.9rem;
+  color: #8a909d;
+}
+
+.wishlist-icon {
+  color: #92a6b3;
+}
+
+.currently-on-song {
+  color: #21b6d9;
+  transform: rotate(-90deg);
+  margin-right: 0.9rem;
+}
+
+.heart i{
+  margin-left: 40px;
+}
+
+/* responsive ness */
+@media screen and (max-width: 1491px) {
+  header .left-section {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Right section */
+  header .right-section{
+    width: 30%;
+    /* height: 200px; */
+    /* border: 2px solid white; */
+    float: right
+
+  }
+
+  /* heading */
+  header .right-section .heading{
+    /* border: 0.5px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  header .right-section .heading h3{
+    color: white;
+    font-weight: 400;
+  }
+
+  header .right-section .heading p{
+    color: #8a909d;
+    font-size: 18px;
+    margin-left: 2px;
+  }
+
+
+  /* Similar artist */
+
+  .Similar-artist-container{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid white; */
+    
+  }
+
+  .Similar-artist-container .similar-artist-box{
+    width: 97%;
+    height: 160px;
+    background-color: #1e222e98;
+    /* border: 2px solid wheat; */
+    margin-top: 10px;
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+  }
+
+  .Similar-artist-container .similar-artist-box p{
+    color: white;
+    margin: 0px 10px;
+  }
+
+  .Similar-artist-container .simi-image{
+    position: relative;
+    margin: 0px 10px;
+    
+  }
+  
+
+  .Similar-artist-container .simi-image img{
+    height: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .Similar-artist-container .simi-image .fa-solid{
+    position: absolute;
+    top: 3rem;
+    right: 3.5rem;
+    font-size: 40px;
+    opacity: 0;
+    transition:  all 0.2s ease-in-out
+  }
+
+  .Similar-artist-container .simi-image:hover img{
+    opacity: 0.4;
+  }
+
+  .Similar-artist-container .simi-image:hover .fa-solid{
+    opacity: 0.7;
+  }
+
+  .Similar-artist-container .artist-name{
+    color: white;
+    
+  }
+
+  .Similar-artist-container .artist-name button{
+    height: 35px;
+    width: 130px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 500;
+  }
+
+  .Similar-artist-container .artist-name h5{
+    margin: 15px;
+  }
+
+  .follow-btn{
+    height: 90px;
+    width: 90px;
+    /* border: 1px solid salmon ;   */
+    margin-left: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .follow-btn i{
+    margin-left: 15px;
+  }
+
+
+  .left-artist-container .popular-artist-container{
+    display: none;
+  }
+
+  .Heading-Container{
+    display: none;
+  }
+
+
+  @media screen and (max-width: 1491px) {
+    header .right-section{
+      display: none;
+    }
+
+    .left-artist-container .popular-artist-container{
+      display: block;
+    }
+  
+    .Heading-Container{
+      display: block;
+    }
+
+  Heading-Container .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    color: #f1f1f1;
+    /* border: 1px solid white; */
+  }
+  
+  .btn_s .fa-solid {
+    margin: 3px;
+    color: #a8a4b8;
+    cursor: pointer;
+    transition: .10s linear;
+  }
+  
+  .btn_s .fa-solid:hover {
+    color: white;
+  }
+  
+
+  /* popular */
+
+  .left-artist-container {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    display: flex;
+    /* border: 1px solid whitesmoke; */
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  
+  .left-artist-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .left-artist-container li {
+    min-width: 110px;
+    height: 110px;
+    list-style-type: none;
+    margin-right: 55px;
+    transition: .5s linear;
+    cursor: pointer;
+  }
+  
+  .Heading-Container .left-artist-container li:hover {
+    background-color: rgb(170, 170, 60, .1)
+  }
+  
+  
+  
+  .left-artist-container li .artist-Image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left-artist-container li .artist-Image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  
+  
+  .artist-Image .fa-solid {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .5s linear;
+    opacity: 0;
+  }
+  
+  .artist-Image:hover .fa-solid {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .5s linear;
+    opacity: 8;
+  }
+  
+  li h4 {
+    width: 140px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+
+
+
+.recently-played{
+  width: 30%;
+  height: 627px;
+  /* border: 1px solid white; */
+  float: right;
+  margin-top: 20px;
+  position: sticky;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.recently-played::-webkit-scrollbar{
+  display: none;
+}
+
+
+@media screen and (max-width: 1491px) {
+  .recently-played {
+    display: block;
+    width: 100%;
+  }
+}

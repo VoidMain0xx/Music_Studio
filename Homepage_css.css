@@ -1,0 +1,1108 @@
+/* For changing The body Or The background of the website to rgb(13,16,42) */
+body {
+  background-color: rgb(13, 16, 42);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav{
+  height: 105px;
+  /* border: 2px solid whitesmoke; */
+  transition: .5s linear;
+}
+
+/* to make the favourite word to center left and to change its font style */
+.favourite-word {
+  font-size: 41px;
+  margin: 0px 169px;
+  font-weight: 300;
+}
+
+.drop {
+  display: none;
+}
+
+@media screen and (max-width: 820px) {
+  .drop {
+    display: block;
+    font-size: 20px;
+    margin: 0px 0px;
+    padding: 2px 2px;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .favourite-word {
+    font-size: 20px;
+    margin: 0px 0px;
+    padding: 2px 2px;
+    font-weight: bold;
+  }
+}
+
+/* For Search bar Of the screen */
+.search-bar-1 {
+  width: 400px;
+  border-radius: 30px;
+  margin: -7px 0px;
+}
+
+.search-icon {
+  margin: -6px 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .search-bar-1 {
+    height: 25px;
+    width: 300px;
+  }
+}
+
+/* For profile icon and images */
+.profile-icon img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0px -8px;
+}
+
+.profile-icon img:hover {
+  height: 55px;
+  width: 55px;
+}
+
+@media screen and (max-width: 820px) {
+  .notification-bell {
+    display: none;
+  }
+
+  .profile-icon {
+    display: none;
+  }
+}
+
+#p-change {
+  display: inline-block;
+  color: whitesmoke;
+  font-weight: 700;
+  background-color: black;
+}
+
+/* For aside section */
+
+aside {
+  width: 420px;
+  height: 1650px;
+  position: sticky;
+  float: right;
+  background-color: #111727;
+  color: whitesmoke;
+  /* box-shadow: 0px 0px 1px 3px rgb(21, 26, 70); */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+aside::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1491px) {
+  aside {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .browse-section {
+    display: none;
+  }
+}
+
+
+/* for left section */
+
+#left-section {
+  color: white;
+}
+
+/* Drop down button */
+/* Dropdown Button */
+
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  /* width: 10px; */
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  /* width: 20px; */
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Queue or Recently played */
+
+.queue-section {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.queue-elements-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.queue-element {
+  margin-bottom: 0.6rem;
+  width: 100%;
+  background-color: #1e222e98;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.song-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.queue-number {
+  font-size: 0.8rem;
+  color: #8092a1;
+  margin-right: 1rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.queue-song-img {
+  width: 3rem;
+  border-radius: 0.4rem;
+  margin-right: 1rem;
+}
+
+.queue-song-img~i {
+  transition: all 0.2s ease-in-out;
+}
+
+.queue-song-img~i:hover {
+  opacity: 0.9;
+  height: 1rem;
+}
+
+.queue-song-img:hover~i {
+  opacity: 0.9;
+  height: 1rem;
+}
+
+.play-btn {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  color: white;
+  top: 1rem;
+  left: 1rem;
+}
+
+.queue-song-name {
+  font-size: 0.9rem;
+  color: #f6f7f9;
+}
+
+.queue-artist-name {
+  font-size: 0.9rem;
+  color: #8a909d;
+}
+
+.wishlist-icon {
+  color: #92a6b3;
+}
+
+.currently-on-song {
+  color: #21b6d9;
+  transform: rotate(-90deg);
+  margin-right: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Left Section Css */
+
+
+/* Lattest English */
+
+
+#left-section {
+  max-width: 72%;
+  /* border: 2px solid white; */
+  float: left;
+}
+
+/* for Small Screens and responsive--ness */
+
+/* Only for surface 7 pro There will be a gap for that we can add a song or view all song in the list because it working fine for every other diveices and only giving an error (gap or pace betWn) the feature will be only availabe for the surface 7 pro */
+
+@media screen and (max-width: 1491px) {
+  #left-section {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.Heading-Container .h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+  color: #f1f1f1;
+  /* border: 1px solid white; */
+}
+
+.btn_s .fa-solid {
+  margin: 3px;
+  color: #a8a4b8;
+  cursor: pointer;
+  transition: .10s linear;
+}
+
+.btn_s .fa-solid:hover {
+  color: white;
+}
+
+/* song cotainer */
+
+.Heading-Container .left-song-container {
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+  display: flex;
+  /* border: 1px solid whitesmoke; */
+  /* In future when we will use js to control the verticle scroll */
+  /* overflow: auto;
+    scroll-behavior: smooth; */
+}
+
+.Heading-Container .left-song-container li {
+  min-width: 110px;
+  height: 200px;
+  list-style-type: none;
+  margin-right: 15px;
+  transition: .5s linear;
+  cursor: pointer;
+}
+
+.Heading-Container .left-song-container li:hover {
+  background-color: rgb(170, 170, 60, .1)
+}
+
+.Heading-Container .left-song-container li .img-play {
+  position: relative;
+  width: 135px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Heading-Container .left-song-container li .img-play img {
+  width: 100%;
+  height: 100%;
+}
+
+.Heading-Container .left-song-container li .img-play .fa-play {
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+  transition: .5s linear;
+  opacity: 0;
+}
+
+.Heading-Container .left-song-container li:hover .img-play .fa-play {
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+  transition: .5s linear;
+  opacity: 8;
+
+}
+
+
+.Heading-Container .left-song-container li h5 {
+  width: 140px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.Heading-Container .left-song-container li h5 .sub-title {
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #8a909d;
+}
+
+#View-all {
+  display: none;
+}
+
+
+@media screen and (max-width : 1250px) {
+  .Heading-Container .left-song-container {
+    min-width: 150px;
+    height: 113px;
+    list-style-type: none;
+    margin-right: 2px;
+    transition: .5s linear;
+    cursor: pointer;
+    overflow: auto;
+    overflow-y: scroll;
+
+  }
+
+  .Heading-Container .left-song-container li::-webkit-scrollbar {
+    display: none;
+  }
+
+  .Heading-Container .left-song-container li {
+    min-width: 110px;
+    height: 20px;
+    list-style-type: none;
+    margin-right: 2px;
+    transition: .5s linear;
+    cursor: pointer;
+  }
+
+  .Heading-Container .left-song-container li .img-play img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Heading-Container .left-song-container li .img-play {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Heading-Container .left-song-container li h5 {
+    width: 80px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+}
+
+/* For surface pro 7 */
+
+@media (max-width: 915px) and (min-width: 900px) {
+  #View-all {
+    display: flex;
+  }
+
+  .Heading-Container .left-song-container {
+    min-width: 150px;
+    height: 113px;
+    list-style-type: none;
+    margin-right: 2px;
+    transition: .5s linear;
+    cursor: pointer;
+    overflow: auto;
+    overflow-y: scroll;
+
+  }
+
+  .Heading-Container .left-song-container li::-webkit-scrollbar {
+    display: none;
+  }
+
+  .Heading-Container .left-song-container li {
+    min-width: 110px;
+    height: 20px;
+    list-style-type: none;
+    margin-right: 2px;
+    transition: .5s linear;
+    cursor: pointer;
+  }
+
+  .Heading-Container .left-song-container li .img-play img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Heading-Container .left-song-container li .img-play {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Heading-Container .left-song-container li h5 {
+    width: 80px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+}
+
+
+/* popular artist */
+
+.left-artist-container {
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+  display: flex;
+  /* border: 1px solid whitesmoke; */
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.left-artist-container::-webkit-scrollbar {
+  display: none;
+}
+
+.left-artist-container li {
+  min-width: 110px;
+  height: 110px;
+  list-style-type: none;
+  margin-right: 55px;
+  transition: .5s linear;
+  cursor: pointer;
+}
+
+.Heading-Container .left-artist-container li:hover {
+  background-color: rgb(170, 170, 60, .1)
+}
+
+
+
+.left-artist-container li .artist-Image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-artist-container li .artist-Image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+
+.artist-Image .fa-solid {
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+  transition: .5s linear;
+  opacity: 0;
+}
+
+.artist-Image:hover .fa-solid {
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+  transition: .5s linear;
+  opacity: 8;
+}
+
+li h4 {
+  width: 140px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+/* The Reason why there are so much spaces to between the css of aside header and footer is because of the ease of undustanding it won't satisify the format document cirietria (If the spelling is correct..............?!!) but as a beiginer it gives me the ease of undustanding*/
+
+footer {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  /* border: 1px solid white; */
+  /* margin-top: 174px; */
+  background-color: #111727;
+  bottom: 0px;
+}
+
+/* For wave */
+
+footer .play-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 20px;
+}
+
+footer .play-section .wave{
+  width: 70px;
+  height: 70px;
+  /* border: 0.5px solid white; */
+  padding: 5px;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 1px;
+
+}
+  
+
+  /* will br sorted in js for animation */
+footer .play-section .wave .wave1{
+ height: 30px;
+ width: 7px;
+ background-color: #36e2ec;
+ margin-right: 5px;
+ border-radius: 10px 10px 0px 0px;
+ animation: wave .5s linear infinite;
+}
+
+footer .play-section .wave .wave1:nth-child(2){
+  height: 20px;
+  margin-right: 3.5px;
+  animation-delay: .4s; 
+}
+
+footer .play-section .wave .wave1:nth-child(3){
+  height: 30px;
+  animation-delay: .8s;
+}
+
+@keyframes wave { 
+  0%{
+    height: 20px;
+  }
+
+  50%{
+    height: 30px;
+    }
+
+  100%{
+    height: 20px;
+    } 
+}
+
+/* Image poster */
+
+footer .play-section #song-Poster{
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
+}
+
+footer .play-section #title{
+  width: 100px;
+  /* border: 1px solid white; */
+  margin-left: 15px;
+  color: white;
+  line-height: 30px;
+  margin-top: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+footer .play-section #title #subtitel{
+  font-size: 17px;
+  color: #4c5263;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+footer .play-section .icon-1{
+  /* height: 50px;
+  width: 50px; */
+  /* border: 1px solid wheat; */
+  margin-left: 15px;
+}
+
+footer .play-section .icon-1 .fa-solid{
+  margin: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+footer .play-section span{
+  color: white;
+  width: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  /* border: 1px solid white; */
+}
+
+
+footer .play-section .current_time{
+  margin: 0px 30px;
+}
+
+footer .play-section .bar{
+  position: relative;
+  width: 30%;
+  height: 2px;
+  background-color: rgb(105, 105, 170, .1);
+  border: 1px solid white;
+  margin: 0px 15px 0px 10px;
+
+}
+
+footer .play-section .bar .bar-2{
+position: absolute;
+  background: #36e2ec;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  transition: .1s linear;
+}
+
+footer .play-section .bar .dot{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #36e2ec;
+  border-radius: 50%;
+  left: 0%;
+  top: -1.5px;
+  transition: .1s linear;
+}
+
+footer .play-section .bar .dot::before{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #36e2ec;
+  border-radius: 50%;
+  left : -5px;
+  top: -5.5px;
+  box-shadow: inset 0px 0px 3px #36e2ec;
+}
+
+footer .play-section .bar input{
+  position: absolute;
+  width: 100%;
+  top: -7;
+  left: 0px;
+  cursor: pointer;
+  z-index: 999999999999999999999999999999999999999999;
+  opacity: 0;
+}
+
+footer .current_time_End{
+  margin-left: 30px;
+}
+
+/* As the mobile devices and tablets already have a volume navigation button so therefore this mnot needed in specific display ratios */
+footer .play-section .vol{
+  position: relative;
+  width: 100px;
+  height: 3px;
+  background-color: rgb(105, 105, 170, .1);
+  margin-left: 50px;  
+}
+
+footer .play-section .vol .fa-solid{
+  position: absolute;
+  color: #fff;
+  font-size: 15px;
+  left: -30px;
+  top: -7px;
+}
+
+footer .play-section .vol input{
+  position: absolute;
+  width: 100%;
+  top: -5;
+  left: 0;
+  cursor: pointer;
+  z-index: 99999999999999999999999999;
+  opacity: 0;
+}
+
+footer .play-section .vol .Vol-bar{
+  position: absolute;
+  background: #36e2ec;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  transition: .1s linear;
+}
+
+footer .play-section .vol .vol-dot{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #36e2ec;
+  border-radius: 50%;
+  left: 0%;
+  top: -1.5px;
+  transition: .1s linear;
+}
+
+footer .play-section .Extra-icon{
+  font-size: 25px;
+  border: 1px solid white;
+  float: right;
+}
+
+footer .play-section .Extra-icon #shutter{
+  font-size: 100px;
+}
+
+
+
+/* For the responsivness of the footer */
+
+@media (max-width: 1457px) {
+  .wave{
+    display: none;
+  }
+  .wave1{
+    /* display: none; */
+  }
+  /* mobile phone allready have vol buttons to navigate */
+  .vol{
+  display: none;
+  }
+
+  .footer{
+    height: 60px;
+  }
+
+  footer .play-section #song-Poster{
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+  }
+
+  footer .play-section .icon-1 .fa-solid{
+    margin: 2px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  footer .play-section #title{
+    width: 50px;
+    /* border: 1px solid white; */
+    margin-left: 7px;
+    color: white;
+    line-height: 30px;
+    margin-top: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  footer .play-section .current_time{
+    margin: 0px 5px;
+  }
+
+  footer .play-section .Extra-icon #shutter{
+    font-size: 30px;
+  }
+
+
+  footer .play-section #title #subtitel{
+    font-size: 9px;
+    color: #4c5263;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  footer .play-section #title{
+    width: 100px;
+    /* border: 1px solid white; */
+    margin-left: 3px;
+    font-size: 10px;
+    color: white;
+    line-height: 15px;
+    margin-top: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+
+  footer .play-section .icon-1{
+    /* height: 50px;
+    width: 50px; */
+    /* border: 1px solid wheat; */
+    margin-left: 7px;
+  }
+  
+  footer .play-section .icon-1 .fa-solid{
+    font-size: 10px;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+
+
+  footer .play-section .Extra-icon{
+    display: none;
+  }
+
+
+  footer .current_time_End{
+    margin-left: 5px;
+  }
+
+
+  footer .play-section span{
+    color: white;
+    width: 20px;
+    font-size: 10px;
+    font-weight: 500;
+    /* border: 1px solid white; */
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*__________________________________________________________________________________________________________ */
+/* Ignore This rough section  */
+
+/* SomeThing went wrong */
+/* The plan was to set the html and a body 100vh and the to make the footer fixed and seting  the top to 100% But It is not working properly so i setting the footer resposive to all thge devices mention in the dev tools*/
+
+/* Iphone se 375px */
+
+/* @media screen and (max-width : 375px){
+  footer{
+    margin-top: 96px;
+  }
+}
+
+/* Iphone XR */
+
+/* @media screen and (max-width : 414px){
+  footer{
+    margin-top: 328px;
+  }
+}
+
+/* Iphone 12 pro and Pixel*/
+
+/* @media screen and (max-width : 393px){
+  footer{
+    margin-top: 328px;
+  }
+} */
+
+/* Samsung s8t */
+
+/* @media screen and (max-width : 360px){
+  footer{
+    margin-top: 171px;
+  }
+} */
+
+/* S20 Ultra */
+/* 
+@media screen and (max-width : 412px){
+  footer{
+    margin-top: 348px;
+  }
+} */
+
+/* ipad Air */
+
+/* @media screen and (max-width : 820px){
+  footer{
+    margin-top: 611px;
+  }
+} */
+
+/* ipad mini */
+
+/* @media screen and (max-width : 786px){
+  footer{
+    margin-top: 455px;
+  }
+} */
+
+/* Surface pro 7 */
+
+/* @media screen and (max-width : 912px){
+  footer{
+    margin-top: 795px;
+  }
+} */
+
+/* Surface Duo */
+
+/* @media screen and (max-width : 540px){
+  footer{
+    margin-top: 152px;
+  }
+} */
+
+/* Fold */
+
+/* @media screen and (max-width : 280px){
+  footer{
+    margin-top: 84px;
+  }
+} */
+
+/* Samsung A5/71 */
+
+/* @media screen and (max-width : 412px){
+  footer{
+    margin-top: 343px;
+  }
+}
+
+/* next hub */
+
+/* @media screen and (max-width : 1024px){
+  footer{
+    margin-top: 115px;
+  }
+} */ 
+/* next Hub Max */
+
+/* @media screen and (max-width : 1280px){
+  footer{
+    margin-top: 115px;
+  }
+} */
+
